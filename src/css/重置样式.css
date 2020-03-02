@@ -1,0 +1,37 @@
+*{
+	margin: 0;padding: 0;font-size: 12px;
+}
+
+.clearbox:after{
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;	
+}
+.clearbox{zoom: 1;}
+img{
+	vertical-align: top;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+input{
+	float: left;
+	outline: none;
+}
+button{
+	float: left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 200;
+}
+{
+	width: 1182px;
+	margin: 0 auto;
+}
+h3,p,span,h2,h4{line-height: 1;}

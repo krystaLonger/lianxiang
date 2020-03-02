@@ -1,1 +1,1 @@
-"use strict";
+"use strict";function getList(){$.ajax({url:"../lib/Lenovo.json",dataType:"json",success:function(t){var n="";t.forEach(function(t){n+='\n\t\t\t\t<li class="clearbox">\n\t\t\t\t\t<p>'.concat(t.title,"</p>\n\t\t\t\t\t<ol >\n\t\t\t\t\t"),t.list.forEach(function(t){n+="<li>".concat(t.name,"</li>")}),n+="\t\n\t\t\t\t\t</ol>\n\t\t\t\t</li>\n\t\t\t\t"}),$(".list>.option>div>ul").html(n)}})}getList();
