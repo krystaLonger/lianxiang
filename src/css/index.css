@@ -1,8 +1,8 @@
+
 .head{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-
 }
 .head .left img,ul{
 	float: left;
@@ -83,6 +83,7 @@
 	justify-content: space-between;
 	padding-left: 55px;
 	background: #e0e0e0
+	
 }
 .banner ul li{
 	float: left;
@@ -117,6 +118,47 @@
 	height: 20px;
 	float: left;
 	margin-top: 8px;
+}
+.sort{
+	position: fixed;
+	right: 16px;
+	top: 160px;
+	z-index: 20;
+	width: 50px;
+	display: none;
+}
+.sort ul li{
+	position: relative;
+}
+.sort ul li img{
+	width: 50px;
+}
+.sort ul li img:nth-of-type(2){
+	display: none;
+}
+.sort ul li p{
+	position: absolute;
+	right: 48px;
+	top: 0;
+	display: none;
+}
+.sort ul li p img{
+	width: 160px;
+}
+.sort ul li:hover>img:nth-of-type(1){
+	display: none;
+}
+.sort ul li:hover>img:nth-of-type(2){
+	display: block;
+}
+.sort ul li:hover p{
+	display: block;
+}
+.sort ul li p:hover img:nth-of-type(1){
+	display: none;
+}
+.sort ul li p:hover img:nth-of-type(2){
+	display:block;
 }
 .img,.swiper-container{
 	height: 470px;
@@ -176,16 +218,16 @@
 
 .list .option{
 	width: 230px;
-	position: absolute;
+	position:absolute;
 	top: 33px;
 	left: 50%;
 	margin-left: -600px;
 	z-index: 10;
-	background-color: red;
-}
-.list .option div{
-	position: relative;
+	background-color: rgba(255,255,255,0.85);
 	font-family: "微软雅黑";
+}
+.list .option div:hover{
+	background-color:#f7f7f7 ;
 }
 .list .option a{
 	width: 184px;
@@ -200,6 +242,11 @@
 	border-right: 1px solid #e6e6e6;
 	position: relative;
 }
+.list .option a p{
+	font-size: 16px;
+	line-height: 25.5px;
+}
+	
 .list .option span{
 	position: absolute;
 	right: 19px;
@@ -209,21 +256,37 @@
 	background: url(../images/L.png);
 	background-position: -84px -36px;
 }
-.list .option ul{
+.list .option div ul{
 	position: absolute;
 	top: 0;
 	left: 230px;
 	background-color: #f7f7f7;
 	padding-top: 8px;
 	color: #494949;
+	display: none;
+	width: 960px;
 }
-.list .option ul li{
-	/* width: 630px;
-	float: left; */
+.list .option div:nth-of-type(2) ul{
+	padding-bottom: 64px;
+}
+.list .option div:nth-of-type(3) ul{
+	padding-bottom: 34px;
+}
+.list .option div:nth-of-type(4) ul{
+	padding-bottom: 114px;
+}
+.list .option div:nth-of-type(5) ul{
+	padding-bottom: 44px;
+}
+.list .option div:nth-of-type(7) ul{
+	padding-bottom: 94px;
+}
+.list .option div ul li{
+
 	margin-bottom: 20px;
 	font-family: "微软雅黑";
 }
-.list .option ul li p{
+.list .option div ul li p{
 	border-right: 1px solid #CCCCCC;
 	color: #494949;
 	font-size: 13px;
@@ -231,7 +294,7 @@
 	color: #494949;
 	float: left;
 	text-align: right;
-	width: 96px;
+	width: 120px;
 	background: url(https://p1.lefile.cn/product/adminweb/2019/07/08/5edf2b2c-f8a5-446a-b215-a9af1f7d1606.png) no-repeat right center;
 	padding-right: 20px;
 	line-height: 20px;
@@ -259,4 +322,160 @@
 }
 .list .option ul li ol li:nth-of-type(1){
 	border: none;
+}
+.list .option .png {
+	position: absolute;
+	right: 0;
+}
+.list .option div .png{
+	position: absolute;
+	right: -960px;
+	top: 0;
+	display: none;
+}
+.list .option div .png a{
+	display: block;
+	width: 252px;
+	height: 160px;
+	border: none;
+}
+/* .list .option div {
+	position: relative;
+} */
+.list .option div .png a img{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.nav {
+	width: 1200px;
+	margin: 0 auto;
+}
+.nav ul{
+	width: 1200px;
+}
+.nav ul li{
+	float: left;
+	width: 10%;
+	height: 95px;
+	line-height: 95px;
+	text-align: center;
+}
+
+.nav ul li img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	margin-top: -10px;
+}
+.nav ul li img:nth-of-type(2){
+	display: none;
+}
+.nav ul li span{
+	display: block;
+	font-size: 13px;
+	margin-top: -30px;
+	color: #505050;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+.nav ul li:hover img:nth-of-type(1){
+	display: none;
+}
+.nav ul li:hover img:nth-of-type(2){
+	display:inline-block ;
+}
+.nav ul li:hover{
+	transition: all .5s;
+	box-shadow: 0 0 8px 0 rgba(200,200,200,0.5);
+	transform: translate3d(0,-2px,0);
+}
+.flash{
+	padding-top: 20px;
+}
+.flash .text{
+	width: 1200px;
+	margin: 0 auto;
+}
+.notebook{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 30px 0 20px 0;
+}
+.notebook .title{
+	margin-bottom: 16px;
+}
+.notebook .title h3{
+	float: left;
+	font-size: 26px;
+	font-weight: bold;
+	color: #1f1f1f;
+	letter-spacing: -0.16px;
+}
+.notebook .title div{
+	float: right;
+	height: 35px;
+	line-height: 35px;
+}
+.notebook .title div a{
+	display: inline-block;
+	vertical-align: bottom;
+	color: #333;
+	margin-right: 16px;
+}
+.notebook .content .left{
+	float: left;
+	width: 230px;
+	height: 542px;
+	background-color: #f5f5f5;
+}
+.notebook .content .right{
+	float: right;
+	width: 958px;
+}
+.notebook .content .right ul li{
+	float: left;
+	width: 226px;
+	height: 265px;
+	margin-right: 12px;
+	background-color: #fff;
+	margin-bottom: 12px;
+}
+.notebook .content .right ul li img{
+	width: 160px;
+	height: 160px;
+	margin:0 0 5px 34px;
+}
+.notebook .content .right ul li p{
+	height: 19px;
+	line-height: 19px;
+	font-size: 15px;
+	color: #242424;
+	letter-spacing: -0.1px;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 4px;
+	padding: 0 15px;
+	overflow: hidden;
+}
+.notebook .content .right ul li i{
+	display: block;
+	font-size: 12px;
+	color: #858585;
+	letter-spacing: -0.07px;
+	text-align: center;
+	height: 14px;
+	line-height: 14px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 0 40px;
+	font-style: normal;
+}
+.notebook .content .right ul li span{
+	display: block;
+	    font-size: 16px;
+	    color: #e2231a;
+	    letter-spacing: -0.1px;
+	    text-align: center;
+	    font-weight: 400;
 }
