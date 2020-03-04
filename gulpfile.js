@@ -92,10 +92,18 @@ const serverHandler = () => {
                 proxies: [
                     //每一个代理配置就是一个对象
                     {
-                        source: '/gx', //源，你的地址标识符
+                        source: '/login', //源，你的地址标识符
                         //直接请求下面这个地址拿不到东西，因为跨域了
-                        target: 'http://127.0.0.1/login.php' //目标
-                    }
+                        target: 'http://localhost:80/php/login.php' //目标
+                    },
+					{
+						source:'/logon',
+						target:'http://localhost:80/php/logon.php'
+					},
+					{
+					  source: '/dm',
+					  target: 'https://search.damai.cn/searchajax.html'
+					}
 
                 ]
             })) //开启服务器

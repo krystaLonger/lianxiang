@@ -446,6 +446,10 @@
 	height: 160px;
 	margin:0 0 5px 34px;
 }
+.notebook .content .right ul li:hover{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	transition: box-shadow .3s linear;
+}
 .notebook .content .right ul li p{
 	height: 19px;
 	line-height: 19px;
