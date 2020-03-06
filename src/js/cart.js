@@ -2,6 +2,7 @@ const cartList = JSON.parse(localStorage.getItem('cartList'))
 // console.log(cartList)
 if(!cartList){
 	alert('您的购物车为空，快去选购吧')
+	window.location.href = '../pages/list.html'
 }else{
 	//渲染数据
 	bindHtml()
@@ -80,6 +81,7 @@ function bindHtml(){
 	
 	`
 	$('.cart').html(str)
+	
 }
 
 //添加事件
@@ -139,5 +141,27 @@ function bindEvent(){
 		localStorage.setItem('cartList',JSON.stringify(cartList))
 	})
 	
+	//点击删除
+	$('.cart').on('click','.del',function(){
+		const id = $(this).data('id')
+		cartList.forEach((item , index) => {
+			if(item.id === id){
+				cartList.splice(index,1)
+			}
+		})
+		bindHtml()
+		
+		localStorage.setItem('cartList',JSON.stringify(cartList))
+	})
+	
+	//清空购物车
+	$('.cart').on('click','.clear',function(){
+		
+		cartList.splice(0,cartList.length)
+		bindHtml()
+		// localStorage.clear(cartList)
+		localStorage.setItem('cartList',JSON.stringify(cartList))
+		
+	})
 	
 }

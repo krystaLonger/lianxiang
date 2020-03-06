@@ -1,0 +1,79 @@
+.footTop{
+	width: 1200px;
+	margin: 0 auto;
+}
+.footTop img{
+	width: 100%;
+}
+.footCenter ul{
+	width: 1124px;
+	margin: 0 auto;
+	padding: 70px 0 70px 76px;
+	float: none;
+}
+.footCenter ul li{
+	width:13% ;
+	box-sizing: border-box;
+	float: left;
+}
+.footCenter ul li h3{
+	font-size: 16px ;
+	line-height: 16px;
+	margin-bottom: 18px ;
+	font-weight: 600 ;
+	color: #424242;
+}
+.footCenter ul li span{
+	display: block;
+	color: #333;
+	font-size: 13px;
+	line-height: 13px;
+	margin-bottom: 12px;
+}
+.footCenter ul .online{
+	width: 22%;
+	border-left: 1px solid #ccc;
+	padding-left: 35px;
+	padding-top: 10px;
+}
+.footCenter ul .online h3{
+	font-size: 20px;
+	text-align: left;
+	color: #E1140A;
+	margin-bottom: 5px;
+}
+.footCenter ul .online span{
+	font-size: 12px;
+	color: #757575;
+	line-height: 25px;
+	margin-bottom: 0;
+}
+.footBottom{
+	border-top: 1px solid #424141;
+	background: #272727;
+}
+.footBottom ul{
+	width: 1200px;
+	margin: 0 auto;
+	float: none;
+	font-size: 12px;
+}
+.footBottom ul .left{
+	float: left;
+}
+.footBottom ul .right{
+	float: right;
+}
+.footBottom ul span{
+	line-height: 46px;
+	font-size: 12px;
+	color: #333;
+}
+.footBottom ul i{
+	font-style: normal;
+	margin: 0 6px;
+	color: #757575;
+}
+.footBottom ul .on{
+	color: #757575;
+}

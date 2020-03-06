@@ -78,6 +78,23 @@
 	margin-right: 31px;
 	margin-left: 30px;
 }
+.head .right a:nth-of-type(1) span{
+	color: #000000;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: underline;
+	top: 18px;
+	right: -4px;
+	width: 66px;
+	background-size: 94px 28px;
+	line-height: 36px;
+	padding-right: 0px;
+	padding-left: 28px;
+	display: none;
+}
+.head .right a:nth-of-type(1):hover span{
+	display: block;
+}
 .banner{
 	display: flex;
 	justify-content: space-between;
@@ -390,13 +407,136 @@
 	box-shadow: 0 0 8px 0 rgba(200,200,200,0.5);
 	transform: translate3d(0,-2px,0);
 }
-.flash{
-	padding-top: 20px;
-}
-.flash .text{
+
+.flash {
 	width: 1200px;
 	margin: 0 auto;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
 }
+/* .flash .flash-middle{
+	width: 100%;
+} */
+.flash .flash-left{
+
+	height: 309px;
+}
+.flash .flash-middle h3{
+	height: 26px;
+	line-height: 26px;
+	margin-left: 22px;
+	background-image: linear-gradient(134deg,#ec1111 0,#ff8200 97%);
+	border-radius: 13px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	padding: 0 10px;
+	margin-top: 20px;
+	width: 107px;
+}
+.flash .flash-middle div{
+	width: 961px;
+
+}
+.flash .flash-middle div ul{
+	padding-left: 23px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-top: 1px solid #F0F0F0;
+}
+.flash .flash-middle div ul li{
+	width: 25%;
+	float: left;
+	margin-top: 15px;
+	border-right: 1px solid #F0F0F0;
+	box-sizing: border-box;
+}
+.flash .flash-middle div ul li .img{
+	width: 160px;
+	height: 160px;
+	text-align: center;
+	margin: auto;
+}
+.flash .flash-middle div ul li .img img{
+	width: 100%;
+	height: 100%;
+}
+.flash .flash-middle div ul li .text{
+	padding-left: 24px;
+}
+.flash .flash-middle div ul li .title span{
+	display: inline-block;
+	width: 192px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 15px;
+	color: #242424;
+	font-weight: 600;
+	margin-top: 9px;
+}
+.flash .flash-middle div ul li .icons{
+	margin-top: 4px;
+}
+.flash .flash-middle div ul li .icons i{
+	display: inline-block;
+	    width: 13px;
+	    height: 13px;
+	    background-image: url(https://p1.lefile.cn/product/adminweb/2020/02/24/eeae0241-a38e-4e5d-802c-4091175a1cbe.png);
+	    background-size: 13px 13px;
+	    margin-top: 1.5px;
+	    margin-left: 2px;
+}
+.flash .flash-middle div ul li .icons span{
+	display: inline-block;
+	    font-size: 12px;
+	    color: #ff2f2f;
+	    left: 17px;
+	    vertical-align: top;
+	    margin: 0 3px;
+}
+.flash .flash-middle div ul li .price{
+	margin-top: 7px;
+}
+.flash .flash-middle div ul li .price .on{
+	font-size: 16px;
+	    color: #e72d21;
+	    font-weight: bold;
+}
+.flash .flash-middle div ul li .price .out{
+	font-size: 14px;
+	 color: #858585;
+	 text-decoration: line-through;
+}
+.flash .flash-right{
+	width: 49px;
+	height: 340px;
+	background-image: linear-gradient(37deg,#ec1111 1%,#ff8200 99%);
+}
+.flash .flash-right div{
+	width: 18px;
+	height: 106px;
+	margin:88px auto 0;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+.flash .flash-right div span{
+	font-size: 14px;
+}
+.flash .flash-right div i{
+	background: url(https://p2.lefile.cn/product/adminweb/2019/11/26/3a702767-4b0a-4e74-a14e-8ddcf5b26609.png) no-repeat center;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-size: 18px 18px;
+	margin-top: 14px;
+}
+
 .notebook{
 	width: 1200px;
 	margin: 0 auto;

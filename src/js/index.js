@@ -67,3 +67,8 @@ function getList(){
         scrollTop: 0
       }, 1000)
     })
+// 退出登录
+$('.head .right  .out').click(()=>{
+	window.location.href = '../pages/index.html'
+	
+})
